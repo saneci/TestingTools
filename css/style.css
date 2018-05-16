@@ -1,0 +1,139 @@
+/*
+* @author Aleksandr Gladskoy
+*/
+body {
+	margin: 5rem 20%;
+}
+/*
+----------------------- MENU ---------------------------------
+*/
+#menu {
+	margin: 0;
+	padding: 0 20% 0;
+	width: 100%;
+	text-decoration: none;
+	text-align: center;
+	background-color: #000;
+	font-family: Arial;
+	position: fixed;
+	display: flex;
+	top: 0;
+	left: 0;
+	box-shadow: 0 7px 5px rgba(0, 0, 0, 0.3);
+}
+#menu ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#menu li {
+	padding: 1rem;
+	display: inline-block;
+}
+#menu li a, .dropbtn {
+    text-decoration: none;
+    display: block;
+    color: #bbb;
+}
+#menu a:hover {
+	color: #fff;
+}
+.dropdown-content {
+	margin-top: 16px !important;
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 0.9em;
+    border-top: 1px solid #444;
+}
+.dropdown-content a {
+    padding: 10px 14px;
+    text-align: left;
+}
+.dropdown-content li:hover {
+	color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*
+-------------------------- TAGS -------------------------------
+*/
+fieldset {
+	margin: 30px 0;
+	padding: 30px;
+	/*border: 1px solid #000;*/
+}
+legend {
+	padding: 0 10px 0;
+	font-size: 1.2em;
+}
+/*
+--------------------------- IDS -------------------------------
+*/
+#form_confirm_cheque :first-child {
+	margin-bottom: 10px;
+}
+/*
+------------------------ CLASSES ------------------------------
+*/
+.fieldset {
+    width: 100%;
+    border-width: 1px;
+    height: 100px;
+    border-style: groove;
+    border-color: threedface;
+	background-color: #eee;
+}
+.server_answer {
+	margin-top: 30px;
+	border-top: 1px solid #000;
+	display: none;
+}
+.server_answer p {
+	padding: 0;
+}
+/*
+------------------ user grid styles ---------------------
+*/
+.grid_col_1 {
+	margin: 1em;
+	width: 97%;
+	height: 2em;
+
+}
+.grid_col_2 {
+	margin: 1em;
+	width: 45%;
+	height: 2em;
+}
+.grid_col_3 {
+	width: 32%;
+	height: 2em;
+}
+/*
+----------------------- buttons -------------------------
+*/
+.btn {
+	cursor: pointer;
+}
+/*
+------------------ close button -------------------------
+*/
+.close {
+	position: relative;
+	top: -27px;
+	left: 98%;
+	width: 15px;
+	height: 15px;
+	opacity: 0.3;
+}
+.close:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+/*
+---------------------------------------------------------

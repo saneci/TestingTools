@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Delete documents</title>
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/script.js" async></script>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="cheque.html">Чеки</a></li>
+			<li><a href="documents.html">Документы</a></li>
+			<li><a href="delete.html">Удаление</a></li>
+			<li><a href="barcodes.html">Штрихкоды</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Инструменты</a>
+				<ul class="dropdown-content">
+					<a id="input_clear" href="#">Очистить поле ввода</a>
+					<!-- <a href="#">Item 2</a>
+					<a href="#">Item 3</a> -->
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div id="container">
+		<fieldset>
+			<legend>Запрос входящих документов</legend> 
+			<form id="form_get_docs" method="GET" action="http://localhost:8080/opt/out" target="srv_answer_0">
+				<input class="grid_col_1 btn btn_send" type="submit" value="Запросить">
+			</form>
+			<div class="server_answer">
+				<div>
+					<p>Ответ сервера:</p>
+					<svg class="close">
+						<line x1="0" y1="0" x2="10" y2="10" style="stroke: #000; stroke-width: 2"/>
+						<line x1="0" y1="10" x2="10" y2="0" style="stroke: #000; stroke-width: 2"/>
+					</svg>
+				</div>
+				<iframe name="srv_answer_0" class="fieldset"></iframe>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Удаление входящих документов</legend> 
+			<form id="form_del_docs" method="GET" action="test_answer.html" target="srv_answer_1">
+				<input class="grid_col_2 btn" type="number" name="391" placeholder="id документа" title="id документа - это число, на которое оканчивается ссылка из списка выше" required>
+				<input class="grid_col_2 btn" type="submit" value="Удалить">
+			</form>
+			<div class="server_answer">
+				<div>
+					<p>Ответ сервера:</p>
+					<svg class="close">
+						<line x1="0" y1="0" x2="10" y2="10" style="stroke: #000; stroke-width: 2"/>
+						<line x1="0" y1="10" x2="10" y2="0" style="stroke: #000; stroke-width: 2"/>
+					</svg>
+				</div>
+				<iframe name="srv_answer_1" class="fieldset"></iframe>
+			</div>
+		</fieldset>
+	</div>
+</body>
+</html>
